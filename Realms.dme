@@ -13,6 +13,7 @@
 #define FILE_DIR "icons/player"
 #define FILE_DIR "icons/turf"
 #define FILE_DIR "icons/turf/island"
+#define FILE_DIR "icons/ui"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
@@ -24,6 +25,9 @@
 #include "code\obj.dm"
 #include "code\Realms.dm"
 #include "code\turf.dm"
+#include "code\mobs\mobProcs.dm"
+#include "code\player\playerVerbs.dm"
+#include "code\ui\barCode.dm"
 #include "maps\noob_island.dmm"
 // END_INCLUDE
 

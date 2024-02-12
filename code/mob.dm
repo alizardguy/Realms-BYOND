@@ -8,6 +8,7 @@ mob
 		stamina = 100
 		healthMax = 100
 		staminaMax = 100
+		healthBar
 
 	Move()
 		if(canMove)
@@ -24,11 +25,11 @@ mob
 				if("Berry")
 					src << "You ate a berry, it tastes sweet"
 					if(src.health < src.healthMax - 4)
-						src.health += 5
+						src.Heal(5)
 						src << "You health is now [src.health]"
 
 				if("Poison Berry") // Icky hurt berry
-					src.health -= 5
+					src.Hurt(5)
 					src << "You ate a berry, it tastes tart"
 					src << "You health is now [src.health]"
 
