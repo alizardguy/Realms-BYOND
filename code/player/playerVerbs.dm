@@ -1,0 +1,4 @@
+mob
+	player
+		verb
+			Cheer()
